@@ -1,6 +1,11 @@
 # compiled binaries
 domjudge-helper
 domjudge-helper.exe
+domjudge-helper-windows-amd64.exe
+domjudge-helper-linux-amd64
+domjudge-helper-macos-arm64
+domjudge-helper-macos-amd64
+domjudge-helper-linux-amd64
 bin/*
 !bin/.gitkeep
 
