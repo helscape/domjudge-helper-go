@@ -103,6 +103,7 @@ func main() {
 
 	var allResults []probResult
 	var wg sync.WaitGroup
+	var resMu sync.Mutex
 
 	for _, prob := range uploadQueue {
 		prob := prob
@@ -145,7 +146,9 @@ func main() {
 				log.UpdateProgress(prob.id, tcTotal, "partial", res.failed)
 			}
 
+			resMu.Lock()
 			allResults = append(allResults, res)
+			resMu.Unlock()
 		}()
 	}
 
