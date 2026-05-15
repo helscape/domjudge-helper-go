@@ -1,0 +1,10 @@
+{
+  "server_url": "DOMJUDGE_URL",
+  "admin_username": "admin",
+  "admin_password": "password",
+  "testcases_dir": "./test-cases",
+  "concurrency": 4,
+  "retry_count": 3,
+  "retry_delay_seconds": 2,
+  "timeout_seconds": 30
+}
