@@ -1,0 +1,25 @@
+# compiled binaries
+domjudge-helper
+domjudge-helper.exe
+bin/*
+!bin/.gitkeep
+
+# real config (never commit credentials)
+config.json
+
+# test case contents are excluded, folder is tracked via .gitkeep
+test-cases/**
+!test-cases/.gitkeep
+
+# go workspace and cache
+go.sum
+*.test
+*.out
+
+# editor and OS artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
